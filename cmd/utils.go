@@ -10,7 +10,7 @@ func getPath() (string, error) {
 		return "", err
 	}
 
-	keyStorePath := homedir + ".keybox"
+	keyStorePath := homedir + "/.keybox"
 
 	return keyStorePath, nil
 }

@@ -2,10 +2,13 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os"
 
 	"github.com/urfave/cli/v2"
 )
+
+var logger = log.New(os.Stdout, "", 0)
 
 func main() {
 	app := &cli.App{
